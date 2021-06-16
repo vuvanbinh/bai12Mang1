@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Screen</title>
+</head>
+<body>
+<h2>Sample Screen:</h2>
+<input name=" " type="text" id="nhapa">
+<button type="button" onclick="demo()">Add</button>
+<button type="button" onclick="demo2()">Display</button>
+<p id="hienthi"></p>
+<script>
+    let mang = [33, 44, 55, 66];
+
+    function demo() {
+        // let index = mang.length;
+        let nhap = +document.getElementById('nhapa').value;
+        mang[mang.length] = nhap;
+        document.getElementById('nhapa').value = '';
+    }
+    function demo2(){
+        let hienthi='';
+        for (let i = 0; i < mang.length; i++) {
+            hienthi+= 'Element' + i + '=' + mang[i] +'<br>' ;
+        }
+        document.getElementById('hienthi').innerHTML= hienthi;
+
+    }
+
+</script>
+</body>
+</html>

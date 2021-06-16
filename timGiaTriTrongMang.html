@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TimGiaTriTrongMang</title>
+</head>
+<body>
+<script>
+    let arr=[3,5,4,6,7,78,6,11,99,133,443,231,44,1];
+    let a = prompt('nhap gia tri can tim');
+    let max=arr[0];
+    let min=arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if(a==arr[i]){
+            alert('tim thay a tai vi tri' +i);
+        }if(max<arr[i]){
+            max=arr[i];
+        }if(min>arr[i]){
+            min=arr[i];
+        }
+    }alert(max+' la gia tri lon nhat trong mang');
+    alert(min +' la gia tri nho nhat trong mang')
+</script>
+</body>
+</html>
